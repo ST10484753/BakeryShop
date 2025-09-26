@@ -38,11 +38,12 @@ header {
 }
 
 .navbar {
-  display: flex;                  /* place logo + links side by side */
-  justify-content: space-between; /* logo left, links right */
-  align-items: center;            /* align items vertically */
-  background-color: #ff99cc;      /* pink theme */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff99cc;
   padding: 10px 30px;
+  position: relative;
 }
 
 .logo img {
@@ -58,7 +59,7 @@ header {
 }
 
 .navbar li {
-  margin-left: 20px; /* space between links */
+  margin-left: 20px; 
 }
 
 .navbar a {
@@ -70,7 +71,28 @@ header {
 }
 
 .navbar a:hover {
-  color: #660033; /* dark pink when hovering */
+  color: #660033;
+}
+
+
+#menu-toggle {
+  display: none;
+}
+
+/* Hamburger button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
 }
 
 
