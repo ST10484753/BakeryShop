@@ -1,0 +1,224 @@
+/* ========== Global Styles ========== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff8f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Homepage only */
+body.homepage {
+  background: url("images/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+/* Headings */
+h1 {
+  color: #6a1b9a;
+  margin-top: 20px;
+}
+
+h2 {
+  color: #c0392b;
+  margin-top: 15px;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 10px;
+}
+
+/* ========== Header & Navigation ========== */
+header {
+  background: #f8c291;
+  padding: 15px 20px;
+}
+
+.navbar {
+  display: flex;                  /* place logo + links side by side */
+  justify-content: space-between; /* logo left, links right */
+  align-items: center;            /* align items vertically */
+  background-color: #ff99cc;      /* pink theme */
+  padding: 10px 30px;
+}
+
+.logo img {
+  height: 80px;  /* control logo size */
+  width: auto;   /* keep proportions */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin-left: 20px; /* space between links */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #660033; /* dark pink when hovering */
+}
+
+
+/* ========== Main Content ========== */
+main {
+  padding: 20px;
+}
+
+/* ========== Gallery Page ========== */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.gallery img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.video-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.video-container video {
+  width: 60%;
+  border: 3px solid #f8c291;
+  border-radius: 10px;
+}
+
+/* ========== News Page ========== */
+article {
+  background: #fff;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+article h2 {
+  color: #d35400;
+  margin-bottom: 10px;
+}
+
+/* ========== Contact Page ========== */
+form {
+  background: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  max-width: 500px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form input[type="submit"] {
+  background: #d35400;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form input[type="submit"]:hover {
+  background: #e67e22;
+}
+
+/* ========== Footer ========== */
+footer {
+  background: #f8c291;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .gallery {
+    justify-content: center;
+  }
+
+  .gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  .video-container video {
+    width: 90%;
+  }
+
+  form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+}
