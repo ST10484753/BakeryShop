@@ -33,6 +33,7 @@ It showcases the bakery’s products, news, gallery, and contact options. The si
 - **Homepage:** Currently `Homepage.html`. If you want GitHub Pages to serve it automatically at the root URL, rename it to `index.html`.  
 - All forms are validated using JavaScript before submission.  
 - The website is fully static; email sending is simulated with JavaScript alerts.
+- Some interactive features or images may not display immediately on GitHub Pages due to caching or the site taking a few minutes to update after a push.
 
 ## GitHub Pages URL
 [https://st10484753.github.io/BakeryShop/](https://st10484753.github.io/BakeryShop/)
