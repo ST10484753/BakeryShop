@@ -1,11 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; URL='Homepage.html'" />
-  <title>Sweet Delights Bakery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Delights |fresh muffins in Johannesburg Homepage</title>
+  <meta name="description" content="Sweet Delights Bakery offers freshly baked muffins and scones daily in Johannesburg. Order online or visit our bakery for delicious treats.">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
 </head>
-<body>
-  <p>If you are not redirected automatically, <a href="Homepage.html">click here</a>.</p>
+<body class="homepage">
+
+<header>
+  <nav>
+    <div class="logo">
+      <img src="images/logo.jpg" alt="Sweet Delights Logo">
+    </div>
+
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+      <span></span><span></span><span></span>
+    </label>
+
+    <ul class="nav-links">
+      <li><a href="index.html">index</a></li>
+      <li><a href="About us page.html">About us page</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li><a href="News.html">News</a></li>
+      <li><a href="Contact us.html">Contact us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h1>Welcome to Sweet Delights Bakery</h1>
+  <p class="fade-in">Where you can find freshly baked scones and muffins every day!</p>
+  
+<div class="gallery">
+  <img src="images/image1.jpg" class="gallery-img fade-in" alt="Scones">
+  <img src="images/image2.jpg" class="gallery-img fade-in" alt="Muffins">
+</div>
+
+ <p id="dynamicMessage"></p>
+</main>
+
+<footer>
+  <p>&copy; ST10484753</p>
+</footer>
+
+
+<script src="JavaScript/script.js"></script>
+
 </body>
 </html>
