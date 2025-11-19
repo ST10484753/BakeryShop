@@ -1,54 +1,55 @@
-
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sweet Delights HOME PAGE</title>
-<link rel="stylesheet" href="CSS/style.css">
+  <title>Sweet Delights | Gallery</title>
+  <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body bgcolor="white" text ="pink">
+<body>
+
 <header>
-<nav class="navbar">
-<div class="logo">
-<img src = "images/logo.jpg " style = "width:300px;  height:200px;">
-</div>
-
-
+  <nav>
+    <div class="logo">
+      <img src="images/logo.jpg" alt="Sweet Delights Logo">
+    </div>
     <input type="checkbox" id="menu-toggle">
     <label for="menu-toggle" class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
+      <span></span><span></span><span></span>
     </label>
-
-<ul class="nav-links"> 
-<li><a href = "Homepage.html">Homepage</a></li>
-<li><a href = "About us page.html">About us page</a></li>  
-<li><a href = "Gallery.html">Gallery</a></li>
-<li><a href = "News.html">News</a></li>
-<li><a href = "Contact us.html">Contact us</a></li>
-</ul>   
-</nav>
-<main>
+    <ul class="nav-links">
+      <li><a href="Homepage.html">Homepage</a></li>
+      <li><a href="About us page.html">About us page</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li><a href="News.html">News</a></li>
+      <li><a href="Contact us.html">Contact us</a></li>
+    </ul>
+  </nav>
 </header>
-<h1>Our Delicious Bakes</h1>
-    <p>Here are some of our freshly baked treats:</p>
-    <img src="images/image1.jpg" alt="Fresh scones" style = "width:500px;  height:300px;">
-	<img src="images/image2.jpg" alt="Fresh scones" style = "width:500px;  height:300px;">
-    <img src="images/image4.jpg" alt="Banana Choc" style = "width:210px;  height:300px;">
-    <img src="images/image5.jpg" alt="Chocolate muffins" style = "width:225px;  height:300px;">
-    <img src="images/image6.jpg" alt="Blueberry" style = "width:225px;  height:300px;">
-	
-<video width ="30%" height = "200" controls >
-<source src = "images/cookie.mp4"    type ="video/mp4">
-</video>
+
+<main>
+
+<section id="dynamicProducts">
+  <h2>Our Bakery Products</h2>
+  <input type="text" id="searchInput" placeholder="Search for products...">
+  <div id="productList"></div>
+</section>
+
+  <h1>Gallery</h1>
+  <div class="gallery">
+ <img src="images/image1.jpg" class="gallery-img fade-in" alt="Scone">
+    <img src="images/image2.jpg" class="gallery-img fade-in" alt="Muffin">
+    <img src="images/image4.jpg" class="gallery-img fade-in" alt="Chocolate Muffin">
+    <img src="images/image5.jpg" class="gallery-img fade-in" alt="Chocolate muffins">
+    <img src="images/image6.jpg" class="gallery-img fade-in" alt="Blueberry">
+  </div>
 </main>
 
 <footer>
-<p><b>
-&Copy:ST10484753
-</p></b>
+  <p>&copy; ST10484753</p>
 </footer>
+
+<script src="JavaScript/script.js"></script>
+
 </body>
 </html>
