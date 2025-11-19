@@ -17,7 +17,7 @@ It showcases the bakery’s products, news, gallery, and contact options. The si
   - `Gallery.html`  
   - `News.html`  
   - `Contact us.html`  
-  - `Enquiry.html`  
+     
 
 ## Features
 - Responsive navigation bar with hamburger menu for mobile devices.  
